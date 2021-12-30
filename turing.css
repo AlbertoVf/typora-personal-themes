@@ -27,18 +27,29 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  margin-left: -1.3em;
+  margin-bottom: 1em;
 }
-
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: 0.8em;
+}
 h1 {
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 18px;
 }
-
+h1,
 blockquote,
-strong {
+strong,
+.md-inline-math,
+.md-math-container {
   color: darkblue;
 }
+
 blockquote {
   margin-left: 40px;
   margin-right: 40px;
@@ -55,39 +66,28 @@ ul {
   list-style-type: square;
 }
 #write {
-  max-width: 60em;
+  max-width: 100em;
 }
 #footer p {
   border-top: 2px solid #333;
   margin-top: 10px;
 }
 
-p {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-/* Codes */
-.cm-s-inner {
-  border-left: 2px solid #333;
-  padding-left: 1em;
-}
-.cm-s-inner * {
-  color: #333 !important;
-}
-
 /* Numbering */
 h1 {
   counter-reset: h2;
-  color: darkblue;
 }
 h2 {
   counter-reset: h3;
+  margin-top: 2.5em;
 }
 h3 {
   counter-reset: h4;
+  margin-top: 2em;
 }
 h4 {
   counter-reset: h5;
+  margin-top: 1.7em;
 }
 h5 {
   counter-reset: h6;
@@ -112,4 +112,44 @@ h5 {
   counter-increment: h6;
   content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "."
     counter(h6) ". ";
+}
+
+/* table */
+table {
+  margin-bottom: 1.333333rem;
+}
+table th,
+table td {
+  padding: 8px;
+  line-height: 1.333333rem;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+table th {
+  font-weight: bold;
+}
+table thead th {
+  vertical-align: bottom;
+}
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+/* Codes */
+.cm-s-inner {
+  border-left: 2px solid #333;
+  padding-left: 1em;
+}
+.cm-s-inner * {
+  /* color: #333 !important; */
+  font: monospace;
+  font-weight: 600;
 }

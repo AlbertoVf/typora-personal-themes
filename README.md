@@ -1,49 +1,70 @@
 # This is a H1 title
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iusto laborum fugit? Eum ad labore ipsam et aperiam recusandae odio eos, est omnis, maiores laudantium? Quibusdam cumque excepturi consectetur voluptatum?Minima sit dicta, debitis quae a molestias ad nesciunt obcaecati magnam, assumenda iste recusandae dolore quam fuga pariatur error consequuntur repellendus, minus rerum nemo tenetur? Quas omnis totam minus nobis.
+
+**Totam esse alias illum dolorem? Quibusdam aliquam doloribus veritatis at exercitationem odit! Voluptatibus distinctio ipsum officiis architecto eum! Dolore quisquam quae aliquam delectus sunt corporis vitae quidem aspernatur, odio ipsam.**
+
+*Reiciendis distinctio culpa doloremque ab veniam voluptatem sint, et aperiam dolores rerum sequi tenetur repudiandae iste hic. Nulla necessitatibus provident, odio neque, reiciendis deleniti, amet perspiciatis aperiam quis accusantium recusandae.*
+
+***Eos suscipit et at in pariatur recusandae quisquam deleniti asperiores laborum dicta officiis minus provident voluptatum quibusdam, veritatis, tempore ratione alias dolorum molestias ea quos exercitationem nobis. Doloribus, dicta saepe?***
+
 ## This is a H2 title
+
+~~Impedit iste velit minima corporis amet ratione odio eos? Quaerat reprehenderit numquam animi dolores ut dolorem commodi saepe labore incidunt porro. Hic enim cupiditate repellat, suscipit molestiae natus eligendi eius.~~
+
+==Beatae maxime recusandae reiciendis cumque laborum voluptates consequuntur assumenda aut ea architecto voluptas animi harum placeat, similique temporibus expedita culpa iure ut, deleniti voluptate iste quas delectus! Repudiandae, at assumenda.==
+
+`Aperiam, ex nobis totam id cupiditate corporis error ipsum iste harum iure eaque dolorem repellendus pariatur excepturi voluptatem a necessitatibus quibusdam unde nihil voluptatibus? Molestiae quo nobis architecto optio ducimus.`
+
 ### This is a H3 title
+
+```python
+line:str= "Praesentium natus libero cupiditate quas fuga exercitationem esse dolorem ut architecto aliquid reprehenderit ullam, ab voluptate eius molestias vero repudiandae sit est tempore asperiores maiores deleniti, mollitia quisquam minima? Eligendi!"
+n:int = 0
+s=12+n
+```
+
+Assumenda ^2^ ~1~ natus nam excepturi voluptatem. Optio placeat debitis saepe eligendi qui, accusantium quis dolore autem ut vero? Et magnam quisquam cum pariatur repudiandae necessitatibus aliquam?
+
+<!--Tenetur maxime labore veritatis aut. Expedita exercitationem ducimus doloremque hic sapiente culpa! Laborum non recusandae nesciunt, blanditiis animi repellendus optio nostrum voluptatum molestiae quidem dolor consequuntur pariatur. Id, vitae adipisci.-->
+
+[Reiciendis dicta quo tempore voluptates odit, culpa fuga. Molestiae rerum quas nulla nostrum doloremque, incidunt quos veniam voluptas, inventore ratione libero, adipisci beatae repellat placeat numquam distinctio modi. Eveniet, laboriosam.](localhost)
+
 #### This is a H4 title
+
+$Python = Java - Type $
+
+| T00  | T10  | T20  |
+| ---- | ---- | ---- |
+| T01  | T11  | T21  |
+| T02  | T12  | T22  |
+
+$$
+Javascript + Type = Typescript
+\\
+Shell + Z = Zsh
+$$
+
+
+- In nemo sint impedit eligendi magnam, itaque veritatis distinctio quae minima adipisci nisi obcaecati eaque esse, eius necessitatibus. Repudiandae perferendis aperiam necessitatibus veritatis, hic voluptates beatae cumque aliquam culpa nam?
+
+- Ipsum facere aliquid veritatis? Corporis reprehenderit unde quis quos, sequi, impedit dolorum deserunt necessitatibus at rem odit nesciunt dolorem sed velit non similique repudiandae? Ratione soluta incidunt eveniet numquam sequi.
+
+- At cumque, voluptate modi necessitatibus possimus assumenda! Perferendis nobis similique expedita asperiores, sapiente nemo esse minima deleniti ipsa voluptas distinctio quo reiciendis ratione provident dolorum molestiae neque? Impedit, delectus odio.
+
 ##### This is a H5 title
+
+1. Consequuntur repudiandae iusto voluptatem neque rerum porro recusandae totam qui ab autem accusamus id culpa tempore atque, rem modi ad! Nulla ea maiores tenetur, consequatur exercitationem libero consequuntur temporibus magnam?
+   1. Repellat, accusamus aut iusto cumque molestias quis quos. Libero error maiores soluta debitis exercitationem in quasi est, atque explicabo magnam placeat tempora non nam quo dolore velit voluptates corporis optio?
+      1. Cumque adipisci earum rem expedita velit error, deserunt cum esse perspiciatis sapiente unde obcaecati illum laborum consequuntur, omnis modi at pariatur quo quis alias et. Veritatis aliquam labore dicta facere!
+      2. Iste soluta atque nemo nesciunt facere exercitationem consequuntur tempora odio quam modi obcaecati, vel officia blanditiis consectetur esse quod autem voluptatibus. Sequi ratione quaerat, natus voluptate aperiam tempore quia cupiditate.
+2. Repellendus error rerum cum natus voluptates animi atque aspernatur facilis ipsam aliquid illo nemo, neque temporibus, vero vel repellat libero? Natus eveniet vero odit. Delectus quod fugiat officiis velit et!
+
 ###### This is a H6 title
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut at in ratione, eaque expedita odio, doloribus, illum quibusdam corrupti dolor adipisci repellendus ipsam blanditiis vero? Commodi laudantium accusantium aliquam dolor.
+- [ ] 
+  Eligendi omnis quas architecto ut necessitatibus ex magnam iusto, velit quae odio provident nostrum esse explicabo, soluta doloremque sit expedita, amet nobis debitis alias numquam facere dignissimos. Alias, aperiam reprehenderit?
 
-Consequuntur veniam aspernatur dolor voluptatum ut fuga. Perspiciatis natus pariatur quo earum explicabo? At cupiditate a beatae vero id maxime dolore cumque corporis rem exercitationem odio nobis odit, magni inventore?
+- [x] Error at minus ullam ab cum ducimus eaque similique neque provident voluptate laboriosam reprehenderit deleniti, quam harum quo dolorum impedit voluptatibus corrupti eum reiciendis. Optio tempora quidem quae soluta quasi!
 
-Velit enim consectetur accusantium saepe, ipsum optio eaque libero iste, hic ducimus quod laborum necessitatibus in aut nulla id? Ipsa culpa vitae vel, molestias cupiditate obcaecati! Dolorum temporibus rerum quia.
-Neque blanditiis molestias provident, eum repudiandae pariatur harum, soluta id voluptates ex hic dicta odio cumque distinctio ipsum delectus natus consequuntur iste tempore placeat in recusandae perferendis ut tempora. Similique.
-
-1. Ratione, hic perferendis. Id harum fuga sapiente velit et dolore eveniet voluptatum minus, quidem aliquid. Possimus aut quas quam quisquam recusandae quo aspernatur quos at? Repudiandae corporis officiis laudantium eligendi.
-2. Perferendis repellat dolor, adipisci dolores assumenda iste ab quas fugiat. At atque ipsa laboriosam asperiores minima quidem officiis eos, maiores architecto, quo fuga, modi amet incidunt porro numquam reiciendis tempora.
-
-- Similique vitae, harum consequuntur eos adipisci libero explicabo placeat, fugiat commodi doloremque quisquam est repudiandae labore id? Suscipit, eveniet nisi ad amet similique a ipsam sequi, quidem ipsa, iusto nemo!
-- Numquam totam labore dolor, facere assumenda nostrum quo quisquam nihil atque consequatur quasi? Ipsum illo enim repellendus tempore eaque eligendi perferendis assumenda. Asperiores tempore omnis, a quibusdam autem iure porro.
-- Repellat praesentium iste reiciendis quas distinctio voluptates corrupti saepe aperiam ad, quisquam voluptas? Laborum atque tempora exercitationem fuga qui itaque odit rem. Consectetur facilis aut soluta perferendis nisi non quia!
-
-- [ ] Quo vitae atque libero! Minima quisquam dolorem ipsum nobis vero perspiciatis at quo iusto delectus, quasi, cupiditate quam ex expedita sit totam deserunt hic optio ipsa? Expedita accusamus earum possimus?
-
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima error, culpa aperiam vel, placeat magni necessitatibus sunt porro tempora quod atque molestiae laudantium deserunt repudiandae id ducimus. Reprehenderit, porro veritatis?
->
-> ```
-> Consequuntur assumenda quae dolor accusantium nostrum dolorum nisi rerum dolores aliquid animi! Labore possimus quo dolor tempora quae? Vitae quisquam quia, sunt eos repellendus nam laudantium reiciendis tempora aspernatur quaerat.
-> ```
->
-> ------
->
-> *Quasi quas excepturi reiciendis eum illo nemo, magnam fugit maxime consectetur aut doloremque impedit dignissimos ea vel? Omnis maxime expedita explicabo officiis labore, dolorem praesentium tempora accusantium. Veritatis, quaerat ullam!*
->
-> **In, provident! Adipisci ipsa eius tenetur totam blanditiis quidem at sequi, iste esse ut deserunt perspiciatis quos magni voluptate labore dolores delectus culpa possimus voluptatum expedita dicta! Enim, ipsam hic.**
->
-> ***Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sint aspernatur dolorum, nobis, quibusdam veniam illo vel obcaecati earum, animi eos excepturi. Sint dolores nemo reprehenderit quidem vel praesentium id!***
->
-> <u>Asperiores eaque dolores quaerat quos quod maiores sint nesciunt placeat! Expedita magnam architecto sint aspernatur debitis soluta libero hic ipsa explicabo quo consequatur, harum alias error aliquam enim sed delectus!</u>
-> <u>Aperiam modi quos atque voluptatum quasi, id sint fuga qui cumque magni est quia, culpa sapiente facilis animi inventore amet deleniti facere suscipit perferendis. Nihil blanditiis quidem unde voluptas voluptates!</u>
->
-> ~~Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eum provident neque soluta tempora laborum, natus atque, corrupti error nesciunt aliquid recusandae quibusdam minus eos ab id est perferendis molestiae?~~
-> $Ipsum magnam, corrupti minus$
-> ^Modi debitis, beatae cumque atque, ut corrupti labore nostrum eius amet delectus nisi ipsa, doloremque cum porro deleniti perspiciatis consequatur accusantium repudiandae vero quasi id minus eos dolorum quia! Sit!^
-> ~In iste possimus quasi fuga iusto aperiam incidunt sit quibusdam, pariatur, hic repellendus explicabo magni accusantium soluta quas nam officiis blanditiis beatae. Veritatis asperiores eius quos est soluta animi beatae?~
-> <!--Delectus, libero. Blanditiis, reiciendis modi voluptatibus totam quam laudantium vel asperiores ipsa tempora optio dolores illum odit architecto cupiditate consectetur accusamus enim? Dicta nulla ducimus accusantium excepturi quis, sed laboriosam!-->
-> [Animi ducimus voluptas sit, quasi corrupti fugit in beatae commodi voluptates ullam quis cumque ipsum veniam quas aspernatur modi aliquid facilis labore quia velit! Cupiditate rerum atque quod dolore aspernatur.
-> Voluptate, provident. Consectetur tempore ratione officiis tenetur dignissimos veritatis, tempora blanditiis ea rem id, quasi voluptatibus optio aut. Cupiditate ex repellat, maiores doloremque sit eius veritatis reprehenderit aspernatur velit fuga!](www.google.com)
-
-==This is a repo that contains typora themes modification==
+- [ ] Deleniti, in modi rem saepe sit rerum assumenda minima molestiae totam velit quo, temporibus tenetur eligendi non nisi iste numquam corporis quaerat voluptates consequuntur fugiat? Nisi accusantium nesciunt quis autem!
