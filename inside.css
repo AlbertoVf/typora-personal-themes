@@ -298,7 +298,7 @@ html {
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 359px) {
@@ -325,7 +325,7 @@ body {
 p {
   font-size: 14px;
   font-family: "Josefin Sans", "Noto Sans SC", -apple-system, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 2;
   font-style: normal;
   color: #363636;
@@ -753,7 +753,7 @@ ol > li > ol > li {
 }
 
 ol > li > ol > li > ol > li {
-  list-style-type: lower-roman;
+  list-style-type: upper-roman;
 }
 
 .φbi a {
