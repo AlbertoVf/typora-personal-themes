@@ -38,6 +38,7 @@ html,
 body,
 #write {
   font-family: "Computer Modern";
+  background-color: none;
 }
 
 h1,
@@ -49,12 +50,30 @@ h6 {
   font-family: "Computer Modern";
 }
 
+h1:first-child {
+  text-align: center;
+  font-style: italic;
+  color: #333;
+  font-size: 3.8rem;
+  margin: 2.4rem auto;
+}
+
+h1:first-child::after {
+  border-bottom: 2px solid var(--primary-color);
+  content: "";
+  width: 33%;
+  display: block;
+  margin: 3px auto;
+  height: 2px;
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  color: var(--primary-color);
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 h3 {
@@ -74,7 +93,7 @@ h6 {
 }
 
 html {
-  font-size: 20px;
+  font-size: 13px;
 }
 
 body,
@@ -97,20 +116,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 #write table th,
 #write table td {
-  border: 1px solid #ddd;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.5em;
 }
-#write table th,
-#write-table th {
-  background: #f2f2f2;
+
+#write table th{
+  text-align: center;
+}
+
+#write table td{
+  text-align: justify;
+}
+#write table td:nth-child(2n) {
+  border-left: 1px solid #6f6f6f;
+  border-right: 1px solid #6f6f6f;
+}
+
+#write table td:first-child{
+  border:none;
+  border-right: 1px solid #6f6f6f;
+}
+
+#write table td:last-child{
+  border:none;
+  border-left: 1px solid #6f6f6f;
 }
 
 /* Codes */
 .cm-s-inner {
-  /* padding-left: 0.6em; */
-  margin: 0.8em;
+  margin: 0.95em;
 }
 .cm-s-inner * {
   font-weight: 600;
@@ -133,7 +169,7 @@ code,
 
 .md-fences,
 pre.sourceCode {
-  font-size: 0.7em;
+  font-size: 0.95em;
   padding: 0.5rem;
 }
 
@@ -145,7 +181,7 @@ blockquote {
   margin: 2rem 0.2rem;
   padding: 0.3rem 0.5rem;
   color: #6f6f6f;
-  border-left: 0.4rem solid gray;
+  border-left: 0.2rem solid var(--primary-color);
 }
 
 blockquote p {
@@ -160,7 +196,6 @@ figure {
   margin: 0.5rem auto;
   max-width: 100%;
   display: block;
-  /* margin: auto; */
 }
 
 figcaption {
@@ -175,16 +210,16 @@ img {
 }
 
 /*
-    Print Mode and page breaks.
-    WkhtmlToPDF does not work on @print mode
+  Print Mode and page breaks.
+  WkhtmlToPDF does not work on @print mode
 */
 
 @media (max-width: 210mm) {
   img {
-    max-height: 8cm;
+    max-height: 15cm;
   }
   html {
-    font-size: 16px;
+    font-size: 12px;
   }
   div[title="pb"],
   page-break {
@@ -228,5 +263,10 @@ img {
   h4 + h5,
   h5 + h6 {
     page-break-before: avoid;
+  }
+  h1:first-of-type {
+    page-break-after: always;
+    font-size: 3.8rem;
+    margin: 4.5cm auto;
   }
 }
