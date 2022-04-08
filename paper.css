@@ -41,7 +41,7 @@ html,
 body,
 #write {
   font-size: 18px;
-  font-family: "FantasqueSansMono Nerd Font", "Computer Modern", monospace;
+  font-family: "JetBrainsMono Nerd Font", "Computer Modern", monospace;
   background-color: none;
 
   counter-reset: img;
@@ -130,11 +130,17 @@ p {
 li {
   list-style-type: upper-roman;
 }
+li::marker {
+  color: var(--primary-color);
+}
 
 li > p > span:nth-child(1) > strong > span {
   color: var(--primary-color);
 }
-
+strong * {
+  text-decoration: none;
+  color: var(--secondary-color) !important;
+}
 /* table style */
 
 table {
@@ -221,12 +227,12 @@ img {
   max-width: 100%;
   display: block;
   margin: auto;
+  counter-increment: img;
 }
 
 figcaption:before {
   border-left: 0.2rem solid var(--primary-color);
   padding-left: 0.5rem;
-  counter-increment: img;
   content: "Img " counter(img) ": ";
 }
 
@@ -250,6 +256,9 @@ li::marker,
 figcaption:before,
 table:after {
   font: normal bold 0.7rem monospace;
+}
+figcaption:before,
+table:after {
   color: var(--secondary-color);
 }
 
