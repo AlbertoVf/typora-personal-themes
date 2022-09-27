@@ -1,0 +1,274 @@
+$color_1: #333;
+$color_2: darkblue;
+$font-family_1: monospace;
+$background-color_1: #fff;
+$background-color_2: #fbfbfb;
+
+/* Turing CSS */
+/* By Mistrza */
+/* Numbering */
+/* table */
+/* Codes */
+body {
+  background-color: $background-color_1;
+  color: $color_1;
+  font-family: $font-family_1;
+  text-decoration-skip: none;
+  text-align: justify;
+}
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -1.3em;
+  margin-bottom: 1em;
+  font-size: 3.2em;
+  font-variant-caps: small-caps;
+  text-align: center;
+  color: $color_2;
+  counter-reset: h2;
+  + {
+    h2 {
+      margin-top: 0.8em;
+    }
+  }
+  &::after {
+    content: " ";
+    width: 80%;
+    border-bottom: 2px solid darkblue;
+    display: block;
+    margin: 0 10%;
+    height: 2px;
+  }
+}
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -1.3em;
+  margin-bottom: 1em;
+  counter-reset: h3;
+  margin-top: 2.5em;
+  + {
+    h3 {
+      margin-top: 0.8em;
+    }
+  }
+}
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -1.3em;
+  margin-bottom: 1em;
+  counter-reset: h4;
+  margin-top: 2em;
+  + {
+    h4 {
+      margin-top: 0.8em;
+    }
+  }
+}
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -1.3em;
+  margin-bottom: 1em;
+  counter-reset: h5;
+  margin-top: 1.7em;
+  + {
+    h5 {
+      margin-top: 0.8em;
+    }
+  }
+}
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -1.3em;
+  margin-bottom: 1em;
+  counter-reset: h6;
+  + {
+    h6 {
+      margin-top: 0.8em;
+    }
+  }
+}
+h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -1.3em;
+  margin-bottom: 1em;
+}
+p {
+  font-size: 16px;
+}
+li {
+  font-size: 16px;
+}
+.cm-s-inner {
+  font-size: 16px;
+  border-left: 2px solid #333;
+  padding-left: 1em;
+  margin: 1.2em 1.2em 2.3em 1.2em;
+  * {
+    font: monospace;
+    font-weight: 600;
+  }
+}
+.footnote-line {
+  font-size: 16px;
+  color: $color_1;
+}
+blockquote {
+  color: $color_2;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: $background-color_2;
+  padding: 10px 40px;
+}
+strong {
+  color: $color_2;
+  font-style: italic;
+}
+.md-inline-math {
+  color: $color_2;
+}
+.md-math-container {
+  color: $color_2;
+}
+a {
+  color: $color_1;
+}
+em {
+  font-style: italic;
+}
+ul {
+  list-style-type: disc;
+}
+#write {
+  max-width: 100em;
+  h2 {
+    &:before {
+      counter-increment: h2;
+      content: counter(h2) ". ";
+    }
+  }
+  h3 {
+    &:before {
+      counter-increment: h3;
+      content: counter(h2) "." counter(h3) ". ";
+    }
+  }
+  h4 {
+    &:before {
+      counter-increment: h4;
+      content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+    }
+  }
+  h5 {
+    &:before {
+      counter-increment: h5;
+      content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+    }
+  }
+  h6 {
+    &:before {
+      counter-increment: h6;
+      content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
+    }
+  }
+}
+#footer {
+  p {
+    border-top: 2px solid #333;
+    margin-top: 10px;
+  }
+}
+table {
+  margin-bottom: 1.333333rem;
+  th {
+    padding: 8px;
+    line-height: 1.333333rem;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+  }
+  td {
+    padding: 8px;
+    line-height: 1.333333rem;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+  }
+  thead {
+    th {
+      vertical-align: bottom;
+    }
+    &:first-child {
+      tr {
+        &:first-child {
+          th {
+            border-top: 0;
+          }
+          td {
+            border-top: 0;
+          }
+        }
+      }
+    }
+  }
+  caption {
+    + {
+      thead {
+        tr {
+          &:first-child {
+            th {
+              border-top: 0;
+            }
+            td {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  colgroup {
+    + {
+      thead {
+        tr {
+          &:first-child {
+            th {
+              border-top: 0;
+            }
+            td {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    + {
+      tbody {
+        border-top: 2px solid #ddd;
+      }
+    }
+  }
+}
+img {
+  margin: 10px;
+  + {
+    img {
+      margin-top: 10px;
+    }
+  }
+}
+ol {
+  > li {
+    list-style-type: upper-roman;
+    > ol {
+      > li {
+        list-style-type: lower-alpha;
+      }
+    }
+  }
+}

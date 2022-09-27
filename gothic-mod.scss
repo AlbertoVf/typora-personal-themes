@@ -1,0 +1,483 @@
+$color_1: #111;
+$color_2: #990000;
+$color_3: #6f6f6f;
+$color_4: #999;
+$color_5: #555;
+$font-family_1: "CaskaydiaCove Nerd Font", "TeXGyreAdventor", "Century Gothic", "Yu Gothic", "Raleway", "STHeiti",
+  sans-serif;
+$font-family_2: "TeXGyreAdventor", "Century Gothic", "Yu Gothic", "Ubuntu", "STHeiti", sans-serif;
+
+@font-face {
+  font-family: "TeXGyreAdventor";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./gothic/texgyreadventor-regular.otf);
+}
+@font-face {
+  font-family: "TeXGyreAdventor";
+  font-style: normal;
+  font-weight: bold;
+  src: url(./gothic/texgyreadventor-bold.otf);
+}
+@font-face {
+  font-family: "TeXGyreAdventor";
+  font-style: italic;
+  font-weight: normal;
+  src: url(./gothic/texgyreadventor-italic.otf);
+}
+@font-face {
+  font-family: "TeXGyreAdventor";
+  font-style: italic;
+  font-weight: bold;
+  src: url(./gothic/texgyreadventor-bolditalic.otf);
+}
+/** ui for windows **/
+/* media */
+/* Chrome 29+ */
+figcaption {
+  font-style: italic;
+  font-size: 0.8rem;
+  counter-increment: figcaption;
+  margin-top: 5px;
+  &::before {
+    font-weight: bold;
+    content: "[" counter(figcaption) "] ";
+  }
+}
+&:root {
+  --window-border: none;
+  --typora-center-window-title: true;
+  --active-file-bg-color: #f3f3f3;
+  --bg-color: #fff;
+  --control-text-color: #777;
+}
+.mac-seamless-mode {
+  #typora-sidebar {
+    top: var(--mac-title-bar-height);
+    padding-top: 0;
+    height: auto;
+  }
+}
+html {
+  background: var(--bg-color);
+  font-family: $font-family_1;
+  font-weight: 300;
+  font-size: 16px;
+}
+body {
+  background: var(--bg-color);
+  font-family: $font-family_1;
+  font-weight: 300;
+}
+#write {
+  background: var(--bg-color);
+  font-family: $font-family_1;
+  font-weight: 300;
+  max-width: 1300px;
+  text-align: justify;
+  > h1 {
+    &:first-child {
+      margin-top: 2.75rem;
+    }
+  }
+  > h2 {
+    &:first-child {
+      margin-top: 1.75rem;
+    }
+  }
+  > h3 {
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+  > h4 {
+    &:first-child {
+      margin-top: 0.5rem;
+    }
+  }
+  > h3.md-focus {
+    &:before {
+      left: -1.875rem;
+      top: 0.5rem;
+      padding: 2px;
+    }
+  }
+  > h4.md-focus {
+    &:before {
+      left: -1.875rem;
+      top: 0.3125rem;
+      padding: 2px;
+    }
+  }
+  > h5.md-focus {
+    &:before {
+      left: -1.875rem;
+      top: 0.25rem;
+      padding: 2px;
+    }
+  }
+  > h6.md-focus {
+    &:before {
+      left: -1.875rem;
+      top: 0.125rem;
+      padding: 2px;
+    }
+  }
+  pre.md-meta-block {
+    min-height: 30px;
+    background: #f8f8f8;
+    padding: 1.5em;
+    font-weight: 300;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+    padding-top: 3em;
+    margin-top: -1.5em;
+    color: $color_4;
+    width: 100vw;
+    max-width: calc(100% + 60px);
+    margin-left: -30px;
+    border-left: 30px #f8f8f8 solid;
+    border-right: 30px #f8f8f8 solid;
+  }
+}
+h1 {
+  color: $color_1;
+  font-family: $font-family_2;
+  font-weight: normal;
+  line-height: 4rem;
+  margin: 0 0 1.75rem;
+  padding: 20px 30px;
+  text-align: center;
+  font-variant-caps: small-caps;
+  &:first-of-type {
+    font-size: 3.75rem;
+    margin-bottom: 5rem;
+    border-bottom: 3px solid;
+    counter-reset: figcaption;
+  }
+}
+h2 {
+  color: $color_1;
+  font-family: $font-family_2;
+  font-weight: normal;
+  margin: 0 0 1.4rem;
+  margin-top: 2.2rem;
+}
+h3 {
+  color: $color_1;
+  font-family: $font-family_2;
+  font-weight: normal;
+}
+h4 {
+  color: $color_1;
+  font-family: $font-family_2;
+  font-weight: normal;
+}
+h5 {
+  color: $color_1;
+  font-family: $font-family_2;
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+h6 {
+  color: $color_1;
+  font-family: $font-family_2;
+  font-size: 1rem;
+  font-weight: bold;
+}
+p {
+  color: $color_1;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin: 0 0 1.25rem;
+}
+a {
+  color: $color_2;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.md-def-url {
+  color: $color_2;
+  text-decoration: none;
+}
+table {
+  margin-bottom: 20px;
+  th {
+    padding: 8px;
+    line-height: 1.25rem;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+  }
+  td {
+    padding: 8px;
+    line-height: 1.25rem;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+  }
+  thead {
+    th {
+      vertical-align: bottom;
+    }
+    &:first-child {
+      tr {
+        &:first-child {
+          th {
+            border-top: 0;
+          }
+          td {
+            border-top: 0;
+          }
+        }
+      }
+    }
+  }
+  caption {
+    + {
+      thead {
+        tr {
+          &:first-child {
+            th {
+              border-top: 0;
+            }
+            td {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  colgroup {
+    + {
+      thead {
+        tr {
+          &:first-child {
+            th {
+              border-top: 0;
+            }
+            td {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    + {
+      tbody {
+        border-top: 2px solid #ddd;
+      }
+    }
+  }
+}
+code {
+  border: 1px solid #ccc;
+  padding: 0.1em;
+  font-size: 0.9em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+.md-fences {
+  border: 1px solid #ccc;
+  padding: 0.1em;
+  font-size: 0.9em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin: 0 0 20px;
+  font-size: 1em;
+  padding: 0.3em 1em;
+  padding-top: 0.4em;
+}
+.task-list {
+  padding-left: 0;
+}
+.task-list-item {
+  padding-left: 2.125rem;
+  input {
+    top: 3px;
+  }
+}
+blockquote {
+  margin: 0 0 1.11111rem;
+  padding: 0.5rem 1.11111rem 0 1.05556rem;
+  border-left: 1px solid gray;
+  line-height: 1.6;
+  color: $color_3;
+  p {
+    line-height: 1.6;
+    color: $color_3;
+  }
+}
+.MathJax_Display {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+p.mathjax-block {
+  padding-bottom: 0;
+}
+.mathjax-block {
+  padding-bottom: 0;
+  > .code-tooltip {
+    bottom: 5px;
+    box-shadow: none;
+  }
+}
+.md-image {
+  > .md-meta {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    &:first-of-type {
+      &:before {
+        padding-left: 4px;
+      }
+    }
+  }
+  > img {
+    margin-top: 2px;
+  }
+}
+#typora-source {
+  .CodeMirror-lines {
+    width: 1300px;
+    max-width: none !important;
+  }
+  color: $color_5;
+}
+#md-searchpanel {
+  border-bottom: 1px solid #ccc;
+  .btn {
+    border: 1px solid #ccc;
+  }
+}
+#md-notification {
+  &:before {
+    top: 14px;
+  }
+  background: #eee;
+}
+.megamenu-menu-panel {
+  .btn {
+    border: 1px solid #ccc;
+  }
+}
+#typora-sidebar {
+  box-shadow: none;
+}
+.file-list-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+.show-folder-name {
+  .file-list-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+  }
+}
+.file-list-item-summary {
+  height: 40px;
+  line-height: 20px;
+}
+@media screen and (max-width: 48em) {
+  blockquote {
+    margin-left: 1rem;
+    margin-right: 0;
+    padding: 0.5em;
+  }
+  .h1 {
+    font-size: 2.827rem;
+  }
+  h1 {
+    font-size: 2.827rem;
+  }
+  .h2 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .h3 {
+    font-size: 1.413rem;
+  }
+  h3 {
+    font-size: 1.413rem;
+  }
+  .h4 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  .h5 {
+    font-size: 1.15rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+  .h6 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+}
+@media print {
+  html {
+    font-size: 12px;
+  }
+  h1 {
+    &:first-of-type {
+      font-size: 8.5rem;
+      margin-top: 10rem;
+      line-height: 6rem;
+      border: none;
+    }
+    + {
+      h1 {
+        + {
+          .md-toc {
+            break-before: avoid;
+          }
+        }
+      }
+    }
+  }
+  .md-toc {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    break-before: recto;
+    break-after: recto;
+    > p {
+      > span {
+        &:nth-child(1) {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .task-list-item {
+    input {
+      &:before {
+        margin-top: -0.2rem;
+      }
+      &:checked {
+        &:before {
+          margin-top: -0.2rem;
+        }
+      }
+    }
+    input[checked] {
+      &:before {
+        margin-top: -0.2rem;
+      }
+    }
+  }
+}

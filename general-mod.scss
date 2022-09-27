@@ -1,0 +1,51 @@
+html,
+body,
+#write {
+  background-color: #fff;
+}
+html {
+  font-size: 16px;
+}
+h1:first-of-type {
+  counter-reset: figcaption;
+}
+
+#write {
+  max-width: 1300px;
+  text-align: justify;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.8rem;
+  counter-increment: figcaption;
+  margin-top: 5px;
+
+  &::before {
+    font-weight: bold;
+    content: "[" counter(figcaption) "] ";
+  }
+}
+
+@media print {
+  html {
+    font-size: 12px;
+  }
+
+  h1:first-of-type {
+    margin-top: 10rem;
+  }
+
+  .md-toc {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    break-before: recto;
+    break-after: recto;
+  }
+  h1 + h1 + .md-toc {
+    break-before: avoid;
+  }
+  .md-toc > p > span:nth-child(1) {
+    visibility: hidden;
+  }
+}

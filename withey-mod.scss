@@ -1,0 +1,380 @@
+$color_1: #333;
+$color_2: #2484c1;
+$color_3: #ddd;
+$color_4: inherit;
+$color_5: #999;
+$color_6: #6a6a6a;
+$color_7: #428bca;
+$color_8: #777777;
+$font-family_1: "Vollkorn", Palatino, Times;
+$font-family_2: "Consolas", "Menlo", "Monaco", monospace;
+$font-family_3: FontAwesome;
+$font-family_4: Courier, monospace;
+$font-family_5: arial, sans-serif;
+$border-color_1: #e5e5e5;
+
+/* Typography -------------------------------------------------------- */
+/** source code mode */
+html {
+  font-size: 18px;
+  margin: auto;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: auto;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-family_1;
+  color: $color_1;
+  line-height: 1.4;
+  text-align: justify;
+}
+#write {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  line-height: 1.53;
+  > h2 {
+    &:first-child {
+      margin-top: 1.2em;
+    }
+  }
+  > h3 {
+    &:first-child {
+      margin-top: 1.2em;
+    }
+  }
+  > h4 {
+    &:first-child {
+      margin-top: 1.2em;
+    }
+  }
+  > p {
+    &:first-child {
+      margin-top: 1.2em;
+    }
+  }
+  > h1 {
+    &:first-child {
+      margin-top: 1.6em;
+      font-weight: bold;
+      font-style: italic;
+      font-variant-caps: small-caps;
+    }
+  }
+  pre.md-meta-block {
+    min-height: 35px;
+    padding: 0.5em 1em;
+    white-space: pre;
+    background: #f8f8f8;
+    border: 0px;
+    color: $color_5;
+    width: 100vw;
+    max-width: calc(100% + 60px);
+    margin-left: -30px;
+    border-left: 30px #f8f8f8 solid;
+    border-right: 30px #f8f8f8 solid;
+    margin-bottom: 2em;
+    margin-top: -1.3333333333333rem;
+    padding-top: 26px;
+    padding-bottom: 10px;
+    line-height: 1.8em;
+    font-size: 0.9em;
+    padding-left: 0;
+  }
+  > h5.md-focus {
+    &:before {
+      top: 2px;
+    }
+  }
+}
+h1 {
+  margin-top: 1.6em;
+  font-weight: bold;
+  font-style: italic;
+  font-variant-caps: small-caps;
+  text-align: center;
+  font-size: 3em;
+  + {
+    h2 {
+      margin-top: 0.7em;
+    }
+  }
+  a {
+    color: $color_1;
+    text-decoration: none;
+    &:hover {
+      color: $color_1;
+      text-decoration: none;
+    }
+  }
+}
+h2 {
+  text-align: center;
+  margin-top: 2em;
+  font-weight: bold;
+  &:after {
+    border-bottom: 1px solid #2484c1;
+    content: "";
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+  }
+  + {
+    h3 {
+      margin-top: 0.7em;
+    }
+  }
+}
+h3 {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 1.1em;
+}
+p {
+  margin-top: 0;
+  -webkit-hypens: auto;
+  -moz-hypens: auto;
+  hyphens: auto;
+}
+.mathjax-block {
+  margin-top: 0;
+  -webkit-hypens: auto;
+  -moz-hypens: auto;
+  hyphens: auto;
+}
+ul {
+  list-style: disc;
+  padding-left: 1.4em;
+}
+ol {
+  padding-left: 1.4em;
+}
+blockquote {
+  margin: 2em 3em;
+  padding: 1em;
+  border-left: 2px solid #2484c1;
+  font-family: $font-family_2;
+  font-size: 0.9em;
+  background: #f8f8f8;
+}
+code {
+  font-family: $font-family_2;
+  font-size: 0.9em;
+  background: #f8f8f8;
+}
+pre {
+  font-family: $font-family_2;
+  font-size: 0.9em;
+  background: #f8f8f8;
+}
+.md-fences {
+  margin-left: 1em;
+  padding-left: 1em;
+  border: 1px solid #ddd;
+  padding-bottom: 8px;
+  padding-top: 6px;
+  margin-bottom: 1.5em;
+  .code-tooltip {
+    bottom: -2em !important;
+  }
+}
+a {
+  color: $color_2;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  img {
+    border: none;
+  }
+}
+hr {
+  color: $color_3;
+  height: 2px;
+  margin: 2em 0;
+  border-top: solid 1px #ddd;
+  border-bottom: none;
+  border-left: 0;
+  border-right: 0;
+}
+.ty-table-edit {
+  background: #ededed;
+  padding-top: 4px;
+}
+table {
+  margin-bottom: 1.333333rem;
+  th {
+    padding: 8px;
+    line-height: 1.333333rem;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+  }
+  td {
+    padding: 8px;
+    line-height: 1.333333rem;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+  }
+  thead {
+    th {
+      vertical-align: bottom;
+    }
+    &:first-child {
+      tr {
+        &:first-child {
+          th {
+            border-top: 0;
+          }
+          td {
+            border-top: 0;
+          }
+        }
+      }
+    }
+  }
+  caption {
+    + {
+      thead {
+        tr {
+          &:first-child {
+            th {
+              border-top: 0;
+            }
+            td {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  colgroup {
+    + {
+      thead {
+        tr {
+          &:first-child {
+            th {
+              border-top: 0;
+            }
+            td {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    + {
+      tbody {
+        border-top: 2px solid #ddd;
+      }
+    }
+  }
+}
+.task-list {
+  padding: 0;
+}
+.md-task-list-item {
+  padding-left: 1.6rem;
+  > input {
+    margin-left: -1.3em;
+    margin-top: calc(1rem - 12px);
+  }
+}
+.md-tag {
+  color: $color_4;
+  font: inherit;
+}
+.md-img-error.md-image {
+  > .md-meta {
+    vertical-align: bottom;
+  }
+}
+.md-toc {
+  margin-top: 40px;
+}
+.md-toc-content {
+  padding-bottom: 20px;
+}
+.outline-expander {
+  &:before {
+    color: $color_4;
+    font-size: 14px;
+    top: auto;
+    content: "\f0da";
+    font-family: $font-family_3;
+  }
+  &:hover {
+    &:before {
+      content: "\f0d7";
+    }
+  }
+}
+.outline-item-open {
+  > .outline-item {
+    > .outline-expander {
+      &:before {
+        content: "\f0d7";
+      }
+    }
+  }
+}
+#typora-source {
+  font-family: $font-family_4;
+  color: $color_6;
+}
+.html-for-mac {
+  #typora-sidebar {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  }
+}
+.cm-s-typora-default {
+  .cm-header {
+    color: $color_7;
+  }
+  .cm-property {
+    color: $color_7;
+  }
+  .cm-atom {
+    color: $color_8;
+  }
+  .cm-number {
+    color: $color_8;
+  }
+}
+.CodeMirror.cm-s-typora-default {
+  div.CodeMirror-cursor {
+    color: $color_7;
+  }
+}
+.typora-node {
+  .file-list-item-parent-loc {
+    font-family: $font-family_5;
+  }
+  .file-list-item-time {
+    font-family: $font-family_5;
+  }
+  .file-list-item-summary {
+    font-family: $font-family_5;
+  }
+}
+.md-mathjax-midline {
+  background: #fafafa;
+}
+.dropdown-menu {
+  .divider {
+    border-color: $border-color_1;
+  }
+}
+@media print {
+  html {
+    font-size: 12px;
+  }
+}

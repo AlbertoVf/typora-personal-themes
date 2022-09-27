@@ -1,0 +1,358 @@
+$color_1: var(--secondary-color);
+$color_2: var(--primary-color);
+$font-family_1: "JetBrainsMono Nerd Font", "Computer Modern", monospace;
+$font-family_2: "Computer Modern";
+$font-family_3: "Computer Modern", Consolas;
+$background-color_1: none;
+$background-color_2: transparent;
+
+@font-face {
+  font-family: "Computer Modern";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./paper/cmunrm.ttf");
+}
+@font-face {
+  font-family: "Computer Modern";
+  font-style: italic;
+  font-weight: normal;
+  src: url("./paper/cmunti.ttf");
+}
+@font-face {
+  font-family: "Computer Modern";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./paper/cmunbx.ttf");
+}
+@font-face {
+  font-family: "Computer Modern";
+  font-style: italic;
+  font-weight: bold;
+  src: url("./paper/cmunbi.ttf");
+}
+/* Generic style */
+/* headers style */
+/* text style */
+/* list style  */
+/* table style */
+/* Stuff */
+/* images style */
+/* footnotes style */
+/* Codes */
+/* Print Mode and page breaks. WkhtmlToPDF does not work on @print mode */
+/* Move top-level headings to a new page on the right-hand side: */
+/* Override the previous ruleset for the very first heading: */
+/* Headings should not be the last paragraph on a page: */
+/* Consecutive headings with deepening level should not be split across pages: */
+&:root {
+  --primary-color: #2875d9;
+  --secondary-color: #333333;
+  --light-color: #f2f2f2;
+  --grey-color: #6f6f6f;
+  --resalt-color: #ffff00;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: $font-family_1;
+  background-color: $background-color_1;
+  counter-reset: img;
+}
+body {
+  font-size: 16px;
+  font-family: $font-family_1;
+  background-color: $background-color_1;
+  counter-reset: img;
+  max-width: 1200px;
+  text-align: justify;
+  display: block;
+  margin: auto;
+}
+#write {
+  font-size: 16px;
+  font-family: $font-family_1;
+  background-color: $background-color_1;
+  counter-reset: img;
+  max-width: 1200px;
+  text-align: justify;
+  display: block;
+  margin: auto;
+  table {
+    th {
+      padding: 0.5em 1.5em;
+      text-align: center;
+    }
+    td {
+      padding: 0.5em 1.5em;
+      text-align: justify;
+      &:nth-child(2n) {
+        border-left: 1px solid var(--grey-color);
+        border-right: 1px solid var(--grey-color);
+      }
+      &:first-child {
+        border: none;
+        border-right: 1px solid var(--grey-color);
+      }
+      &:last-child {
+        border: none;
+        border-left: 1px solid var(--grey-color);
+      }
+    }
+  }
+}
+h1 {
+  font-family: $font-family_2;
+  &:first-child {
+    text-align: center;
+    color: $color_1;
+    font-size: 3rem;
+    margin: 2.4rem auto;
+    &::after {
+      border-bottom: 2px solid var(--primary-color);
+      content: "";
+      width: 40%;
+      display: block;
+      margin: 3px auto;
+      height: 3px;
+    }
+  }
+}
+h2 {
+  font-family: $font-family_2;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-family: $font-family_2;
+  font-size: 1.6rem;
+  margin: 1.1rem auto;
+}
+h4 {
+  font-family: $font-family_2;
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+  font-style: italic;
+}
+h5 {
+  font-family: $font-family_2;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+h6 {
+  font-family: $font-family_2;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.4rem;
+}
+a {
+  color: $color_2;
+}
+ul {
+  margin-left: 1.4rem;
+}
+ol {
+  margin-left: 1.4rem;
+}
+li {
+  &::marker {
+    font-weight: 500;
+    color: $color_2;
+    font: normal bold 0.7rem monospace;
+  }
+  > p {
+    > span {
+      &:nth-child(1) {
+        > strong {
+          > span {
+            color: $color_2;
+          }
+        }
+      }
+    }
+  }
+}
+strong {
+  * {
+    text-decoration: none;
+    color: $color_1 !important;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  &:after {
+    font: normal bold 0.7rem monospace;
+    color: $color_1;
+  }
+}
+sup.md-footnote {
+  background-color: $background-color_2;
+  color: $color_2;
+  padding: 1px;
+  margin: 0;
+}
+code {
+  background: var(--light-color);
+}
+.md-fences {
+  background: var(--light-color);
+  font-size: 0.9em;
+  padding: 0.25rem;
+}
+.sourceCode {
+  background: var(--light-color);
+}
+pre.sourceCode {
+  font-size: 0.9em;
+  padding: 0.25rem;
+}
+.show-fences-line-number {
+  .md-fences {
+    padding-left: 0.25rem;
+  }
+}
+blockquote {
+  margin: 2rem 6rem;
+  padding: 0.6rem;
+  color: $color_2;
+  border-left: 0.15rem solid var(--primary-color);
+}
+mark {
+  background: var(--resalt-color);
+}
+figure {
+  margin: 0.1rem auto;
+  max-width: 100%;
+  display: block;
+}
+figcaption {
+  text-align: left;
+  margin: 0.1rem auto;
+  font: italic 0.7rem monospace;
+  color: $color_2;
+  &:before {
+    border-left: 0.2rem solid var(--primary-color);
+    padding-left: 0.5rem;
+    content: "Fig " counter(img) ": ";
+    font: normal bold 0.7rem monospace;
+    color: $color_1;
+  }
+}
+img {
+  margin: 0.5rem;
+  max-width: 100%;
+  display: block;
+  counter-increment: img;
+}
+.footnotes {
+  font-family: $font-family_3;
+}
+.cm-s-inner {
+  margin: 0.95em;
+}
+@media (max-width: 210mm) {
+  img {
+    max-width: 14cm;
+  }
+  html {
+    font-size: 12pt;
+  }
+  .md-toc-h1 {
+    a {
+      font-size: 1.2rem;
+      color: $color_1 !important;
+    }
+  }
+  .md-toc-h3 {
+    a {
+      color: $color_1 !important;
+    }
+  }
+  div[title="pb"] {
+    display: block;
+    page-break-after: always;
+    break-after: page;
+  }
+  page-break {
+    display: block;
+    page-break-after: always;
+    break-after: page;
+  }
+  nav {
+    font-size: 0.9rem;
+    page-break-after: always;
+    page-break-before: always;
+    a {
+      color: $color_1;
+    }
+  }
+  h1 {
+    page-break-before: right;
+    break-before: recto;
+    page-break-after: avoid;
+    &:first-of-type {
+      page-break-before: avoid;
+      break-before: avoid;
+      page-break-after: always;
+      font-size: 3.8rem;
+      margin: 4.5cm auto;
+    }
+    + {
+      h2 {
+        page-break-before: avoid;
+      }
+    }
+  }
+  h2 {
+    page-break-before: right;
+    break-before: recto;
+    page-break-after: avoid;
+    + {
+      h3 {
+        page-break-before: avoid;
+      }
+    }
+  }
+  section {
+    > h1 {
+      &:first-child {
+        page-break-before: avoid;
+        break-before: avoid;
+      }
+    }
+  }
+  h3 {
+    page-break-after: avoid;
+    + {
+      h4 {
+        page-break-before: avoid;
+      }
+    }
+  }
+  h4 {
+    page-break-after: avoid;
+    + {
+      h5 {
+        page-break-before: avoid;
+      }
+    }
+  }
+  h5 {
+    page-break-after: avoid;
+    + {
+      h6 {
+        page-break-before: avoid;
+      }
+    }
+  }
+  h6 {
+    page-break-after: avoid;
+  }
+}
