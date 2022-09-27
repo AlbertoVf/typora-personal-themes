@@ -36,14 +36,12 @@
 * {
   box-sizing: border-box;
 }
-
 html,
 body,
 #write {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "JetBrainsMono Nerd Font", "Computer Modern", monospace;
   background-color: none;
-
   counter-reset: img;
 }
 body,
@@ -64,46 +62,40 @@ h5,
 h6 {
   font-family: "Computer Modern";
 }
-
 h1:first-child {
   text-align: center;
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--secondary-color);
-  font-size: 3.8rem;
+  font-size: 3rem;
   margin: 2.4rem auto;
 }
 h1:first-child::after {
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   content: "";
   width: 40%;
   display: block;
   margin: 3px auto;
   height: 3px;
 }
-
 h2 {
-  font-size: 2.2rem;
-  text-decoration: underline var(--primary-color);
+  font-size: 1.8rem;
+  /* text-decoration: underline var(--primary-color); */
   margin-bottom: 2rem;
 }
-
 h3 {
   font-size: 1.6rem;
   margin: 1.1rem auto;
 }
-
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 0.7rem;
   margin-left: 0.7rem;
   font-style: italic;
 }
-
 h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.6rem;
 }
-
 h6 {
   font-size: 1rem;
   margin-bottom: 0.4rem;
@@ -126,14 +118,10 @@ ol,
 p {
   margin-left: 1.4rem;
 }
-
-li {
-  list-style-type: upper-roman;
-}
 li::marker {
+  font-weight: 500;
   color: var(--primary-color);
 }
-
 li > p > span:nth-child(1) > strong > span {
   color: var(--primary-color);
 }
@@ -147,7 +135,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 #write table th,
 #write table td {
   padding: 0.5em 1.5em;
@@ -179,7 +166,6 @@ sup.md-footnote {
   padding: 1px;
   margin: 0;
 }
-
 code,
 .md-fences,
 .sourceCode {
@@ -187,23 +173,17 @@ code,
 }
 .md-fences,
 pre.sourceCode {
-  font-size: 0.95em;
-  padding: 0.5rem;
+  font-size: 0.9em;
+  padding: 0.25rem;
 }
 .show-fences-line-number .md-fences {
-  padding-left: 0.5rem;
+  padding-left: 0.25rem;
 }
-
 blockquote {
   margin: 2rem 6rem;
-  padding: 0.5rem;
-  font-style: italic;
+  padding: 0.6rem;
   color: var(--primary-color);
-  border-left: 0.2rem solid var(--primary-color);
-}
-
-blockquote p {
-  padding: 0.2rem;
+  border-left: 0.15rem solid var(--primary-color);
 }
 mark {
   background: var(--resalt-color);
@@ -212,46 +192,35 @@ mark {
 /* images style */
 
 figure {
-  margin: 0.5rem auto;
+  margin: 0.1rem auto;
   max-width: 100%;
   display: block;
 }
 figcaption {
   text-align: left;
-  margin: 0.5rem auto;
+  margin: 0.1rem auto;
   font: italic 0.7rem monospace;
   color: var(--primary-color);
 }
-
 img {
+  margin: 0.5rem;
   max-width: 100%;
   display: block;
-  margin: auto;
   counter-increment: img;
 }
-
 figcaption:before {
   border-left: 0.2rem solid var(--primary-color);
   padding-left: 0.5rem;
-  content: "Img " counter(img) ": ";
+  content: "Fig " counter(img) ": ";
 }
-
 /* footnotes style */
 .footnotes {
   font-family: "Computer Modern", Consolas;
 }
-
 /* Codes */
 .cm-s-inner {
   margin: 0.95em;
 }
-.cm-s-inner * {
-  font-weight: 600;
-}
-#typora-source * {
-  font-family: "FantasqueSansMono Nerd Font", monospace;
-}
-
 li::marker,
 figcaption:before,
 table:after {
@@ -262,16 +231,15 @@ table:after {
   color: var(--secondary-color);
 }
 
-/*  Print Mode and page breaks. WkhtmlToPDF does not work on @print mode */
+/* Print Mode and page breaks. WkhtmlToPDF does not work on @print mode */
 
 @media (max-width: 210mm) {
   img {
-    max-height: 15cm;
+    max-width: 14cm;
   }
   html {
     font-size: 12pt;
   }
-
   .md-toc-h1 a {
     font-size: 1.2rem;
     color: var(--secondary-color) !important;
@@ -279,38 +247,32 @@ table:after {
   .md-toc-h3 a {
     color: var(--secondary-color) !important;
   }
-
   div[title="pb"],
   page-break {
     display: block;
     page-break-after: always;
     break-after: page;
   }
-
   nav {
     font-size: 0.9rem;
     page-break-after: always;
     page-break-before: always;
   }
-
   nav a {
     color: var(--secondary-color);
   }
-
   /* Move top-level headings to a new page on the right-hand side: */
   h1,
   h2 {
     page-break-before: right;
     break-before: recto;
   }
-
   /* Override the previous ruleset for the very first heading: */
   h1:first-of-type,
   section > h1:first-child {
     page-break-before: avoid;
     break-before: avoid;
   }
-
   /* Headings should not be the last paragraph on a page: */
   h1,
   h2,
@@ -320,7 +282,6 @@ table:after {
   h6 {
     page-break-after: avoid;
   }
-
   /* Consecutive headings with deepening level should not be split across pages: */
   h1 + h2,
   h2 + h3,
@@ -329,7 +290,6 @@ table:after {
   h5 + h6 {
     page-break-before: avoid;
   }
-
   h1:first-of-type {
     page-break-after: always;
     font-size: 3.8rem;

@@ -1,6 +1,4 @@
-html {
-  font-size: 18px;
-}
+html { font-size: 18px; }
 
 html,
 body {
@@ -22,18 +20,9 @@ body {
   line-height: 1.53;
 }
 
-#write > h2:first-child,
-#write > h3:first-child,
-#write > h4:first-child,
-#write > p:first-child {
-  margin-top: 1.2em;
-}
+#write > h2:first-child, #write > h3:first-child, #write > h4:first-child, #write > p:first-child { margin-top: 1.2em; }
 
-@media print {
-  html {
-    font-size: 12px;
-  }
-}
+@media print { html { font-size: 12px; } }
 
 /* Typography -------------------------------------------------------- */
 
@@ -50,9 +39,7 @@ h3 {
   text-align: center;
 }
 
-h1 {
-  font-size: 3em;
-}
+h1 { font-size: 3em; }
 
 h2 {
   margin-top: 2em;
@@ -74,10 +61,7 @@ h2:after {
   height: 1px;
 }
 
-h1 + h2,
-h2 + h3 {
-  margin-top: 0.7em;
-}
+h1 + h2, h2 + h3 { margin-top: 0.7em; }
 
 p,
 .mathjax-block {
@@ -90,9 +74,7 @@ ul {
   list-style: disc;
   padding-left: 1.4em;
 }
-ol {
-  padding-left: 1.4em;
-}
+ol { padding-left: 1.4em; }
 blockquote {
   margin: 2em 3em;
   padding: 1em;
@@ -115,16 +97,9 @@ blockquote {
   margin-bottom: 1.5em;
 }
 
-a {
-  color: #2484c1;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a img {
-  border: none;
-}
+a { color: #2484c1; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a img { border: none; }
 h1 a,
 h1 a:hover {
   color: #333;
@@ -143,9 +118,7 @@ hr {
   background: #ededed;
   padding-top: 4px;
 }
-table {
-  margin-bottom: 1.333333rem;
-}
+table { margin-bottom: 1.333333rem; }
 table th,
 table td {
   padding: 8px;
@@ -153,31 +126,13 @@ table td {
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
-table th {
-  font-weight: bold;
-}
-table thead th {
-  vertical-align: bottom;
-}
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
-table colgroup + thead tr:first-child th,
-table colgroup + thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-  border-top: 0;
-}
-table tbody + tbody {
-  border-top: 2px solid #ddd;
-}
+table th { font-weight: bold; }
+table thead th { vertical-align: bottom; }
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td { border-top: 0; }
+table tbody + tbody { border-top: 2px solid #ddd; }
 
-.task-list {
-  padding: 0;
-}
-
-.md-task-list-item {
-  padding-left: 1.6rem;
-}
+.task-list { padding: 0; }
+.md-task-list-item { padding-left: 1.6rem; }
 
 .md-tag {
   color: inherit;
@@ -192,13 +147,11 @@ table tbody + tbody {
   background: #f8f8f8;
   border: 0px;
   color: #999;
-
   width: 100vw;
   max-width: calc(100% + 60px);
   margin-left: -30px;
   border-left: 30px #f8f8f8 solid;
   border-right: 30px #f8f8f8 solid;
-
   margin-bottom: 2em;
   margin-top: -1.3333333333333rem;
   padding-top: 26px;
@@ -207,20 +160,12 @@ table tbody + tbody {
   font-size: 0.9em;
   padding-left: 0;
 }
-.md-img-error.md-image > .md-meta {
-  vertical-align: bottom;
-}
-#write > h5.md-focus:before {
-  top: 2px;
-}
+.md-img-error.md-image > .md-meta { vertical-align: bottom; }
+#write > h5.md-focus:before { top: 2px; }
 
-.md-toc {
-  margin-top: 40px;
-}
+.md-toc { margin-top: 40px; }
 
-.md-toc-content {
-  padding-bottom: 20px;
-}
+.md-toc-content { padding-bottom: 20px; }
 
 .outline-expander:before {
   color: inherit;
@@ -230,10 +175,7 @@ table tbody + tbody {
   font-family: FontAwesome;
 }
 
-.outline-expander:hover:before,
-.outline-item-open > .outline-item > .outline-expander:before {
-  content: "\f0d7";
-}
+.outline-expander:hover:before, .outline-item-open > .outline-item > .outline-expander:before { content: "\f0d7"; }
 
 /** source code mode */
 #typora-source {
@@ -246,36 +188,17 @@ table tbody + tbody {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
-.cm-s-typora-default .cm-header,
-.cm-s-typora-default .cm-property,
-.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-  color: #428bca;
-}
-
-.cm-s-typora-default .cm-atom,
-.cm-s-typora-default .cm-number {
-  color: #777777;
-}
-
-.typora-node .file-list-item-parent-loc,
-.typora-node .file-list-item-time,
-.typora-node .file-list-item-summary {
-  font-family: arial, sans-serif;
-}
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property, .CodeMirror.cm-s-typora-default div.CodeMirror-cursor { color: #428bca; }
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number { color: #777777; }
+.typora-node .file-list-item-parent-loc, .typora-node .file-list-item-time, .typora-node .file-list-item-summary { font-family: arial, sans-serif; }
 
 .md-task-list-item > input {
   margin-left: -1.3em;
   margin-top: calc(1rem - 12px);
 }
 
-.md-mathjax-midline {
-  background: #fafafa;
-}
+.md-mathjax-midline { background: #fafafa; }
 
-.md-fences .code-tooltip {
-  bottom: -2em !important;
-}
+.md-fences .code-tooltip { bottom: -2em !important; }
 
-.dropdown-menu .divider {
-  border-color: #e5e5e5;
-}
+.dropdown-menu .divider { border-color: #e5e5e5; }
